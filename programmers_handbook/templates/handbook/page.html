@@ -12,5 +12,5 @@
 {% endblock %}
 
 {% block "content" %}
-    {{ selected_content.text|markdown:"safe" }}
+    {{ selected_content.text|markdown:"safe,footnotes" }}
 {% endblock %}

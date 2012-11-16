@@ -8,3 +8,5 @@ local_settings.py
 handbook.sqlite
 
 scss/.sass-cache
+
+handbook.sqlite3
