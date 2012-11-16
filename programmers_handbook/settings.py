@@ -3,8 +3,8 @@
 import os
 
 WORKSPACE_ROOT = os.path.abspath(os.path.dirname(__file__))
-WORKSPACE_ROOT = os.path.normpath(WORKSPACE_ROOT + '/..' + '/..') + '/'
-STATIC_PATH = WORKSPACE_ROOT + 'static/'
+#WORKSPACE_ROOT = os.path.normpath(WORKSPACE_ROOT + '/..' + '/..') + '/'
+STATIC_PATH = os.path.join(WORKSPACE_ROOT, 'static')
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -107,7 +107,7 @@ ROOT_URLCONF = 'programmers_handbook.urls'
 WSGI_APPLICATION = 'programmers_handbook.wsgi.application'
 
 TEMPLATE_DIRS = (
-    WORKSPACE_ROOT + 'templates/',
+    os.path.join(WORKSPACE_ROOT, 'templates')
 )
 
 INSTALLED_APPS = (
