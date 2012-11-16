@@ -17,8 +17,8 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'handbook',                      # Or path to database file if using sqlite3.
+        'ENGINE': os.environ['DJANGO_DB_ENGINE'], # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'handbook.sqlite3',                      # Or path to database file if using sqlite3.
         'USER': 'handbook',                      # Not used with sqlite3.
         'PASSWORD': 'handbook',                  # Not used with sqlite3.
         'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -155,5 +155,6 @@ LOGGING = {
     }
 }
 
-import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
+if not os.environ['DJANGO_LOCAL']:
+    import dj_database_url
+    DATABASES['default'] =  dj_database_url.config()
