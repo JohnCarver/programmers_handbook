@@ -247,12 +247,13 @@ a {
 /* line 117, ../../scss/style.scss */
 #wrapper aside ul {
   margin: 10px 20px;
+  line-height: 1.5em;
 }
-/* line 120, ../../scss/style.scss */
+/* line 121, ../../scss/style.scss */
 #wrapper aside ul ul {
-  margin: 4px 20px;
+  margin: 4px 0 10px 20px;
 }
-/* line 122, ../../scss/style.scss */
+/* line 123, ../../scss/style.scss */
 #wrapper aside ul ul li {
   list-style: square;
 }

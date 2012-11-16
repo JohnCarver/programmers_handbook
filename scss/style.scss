@@ -116,9 +116,10 @@ a { color: #0C6092; }
 
         ul {
            margin: 10px 20px;
+           line-height: 1.5em;
 
             ul {
-                margin: 4px 20px;
+                margin: 4px 0 10px 20px;
                 li { list-style: square; }
             }
         }
