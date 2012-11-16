@@ -46,6 +46,8 @@ a { color: #0C6092; }
 
         em { font-style: italic; }
 
+        p { padding: 5px 0; }
+
         p > code {
             font-family: monospace;
             background: #f9f9f9;
@@ -75,11 +77,13 @@ a { color: #0C6092; }
 
             li {
                 list-style: disc;
-                list-style-position: inside;
+                list-style-position: outside;
+                margin-left: 30px;
 
                 ul {
                     margin-left: 10px;
                     list-style: square;
+                    li { margin-left: 8px; }
                 }
             }
         }
@@ -88,9 +92,20 @@ a { color: #0C6092; }
             margin: 5px;
             li {
                 list-style: decimal;
-                list-style-position: inside;
-                ul { margin-left: 10px; }
+                list-style-position: outside;
+                margin-left: 30px;
+                ul, ol {
+                    margin-left: 10px;
+                    li { margin-left: 8px; }
+                }
             }
+        }
+
+        hr {
+            display: block;
+            margin: 20px 0;
+            border: none;
+            border-top: 1px solid #ccc;
         }
     }
 

@@ -168,6 +168,10 @@ a {
   font-style: italic;
 }
 /* line 49, ../../scss/style.scss */
+#wrapper article p {
+  padding: 5px 0;
+}
+/* line 51, ../../scss/style.scss */
 #wrapper article p > code {
   font-family: monospace;
   background: #f9f9f9;
@@ -177,64 +181,81 @@ a {
   padding: 1px 3px;
   white-space: nowrap;
 }
-/* line 59, ../../scss/style.scss */
+/* line 61, ../../scss/style.scss */
 #wrapper article pre > code {
   font-family: monospace;
   margin: 5px 0;
 }
-/* line 64, ../../scss/style.scss */
+/* line 66, ../../scss/style.scss */
 #wrapper article blockquote {
   display: block;
   border-left: 3px solid #eee;
   margin-left: 10px;
   padding-left: 10px;
 }
-/* line 70, ../../scss/style.scss */
+/* line 72, ../../scss/style.scss */
 #wrapper article blockquote blockquote {
   margin: 5px 0;
 }
-/* line 73, ../../scss/style.scss */
+/* line 75, ../../scss/style.scss */
 #wrapper article ul {
   margin: 5px;
 }
-/* line 76, ../../scss/style.scss */
+/* line 78, ../../scss/style.scss */
 #wrapper article ul li {
   list-style: disc;
-  list-style-position: inside;
+  list-style-position: outside;
+  margin-left: 30px;
 }
-/* line 80, ../../scss/style.scss */
+/* line 83, ../../scss/style.scss */
 #wrapper article ul li ul {
   margin-left: 10px;
   list-style: square;
 }
-/* line 87, ../../scss/style.scss */
+/* line 86, ../../scss/style.scss */
+#wrapper article ul li ul li {
+  margin-left: 8px;
+}
+/* line 91, ../../scss/style.scss */
 #wrapper article ol {
   margin: 5px;
 }
-/* line 89, ../../scss/style.scss */
+/* line 93, ../../scss/style.scss */
 #wrapper article ol li {
   list-style: decimal;
-  list-style-position: inside;
-}
-/* line 92, ../../scss/style.scss */
-#wrapper article ol li ul {
-  margin-left: 10px;
+  list-style-position: outside;
+  margin-left: 30px;
 }
 /* line 97, ../../scss/style.scss */
+#wrapper article ol li ul, #wrapper article ol li ol {
+  margin-left: 10px;
+}
+/* line 99, ../../scss/style.scss */
+#wrapper article ol li ul li, #wrapper article ol li ol li {
+  margin-left: 8px;
+}
+/* line 104, ../../scss/style.scss */
+#wrapper article hr {
+  display: block;
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+/* line 112, ../../scss/style.scss */
 #wrapper aside {
   float: left;
   width: 230px;
 }
-/* line 101, ../../scss/style.scss */
+/* line 116, ../../scss/style.scss */
 #wrapper aside a {
   color: #444;
   text-decoration: none;
 }
-/* line 104, ../../scss/style.scss */
+/* line 119, ../../scss/style.scss */
 #wrapper aside a:hover {
   text-decoration: underline;
 }
-/* line 107, ../../scss/style.scss */
+/* line 122, ../../scss/style.scss */
 #wrapper aside h2 {
   color: #222;
   font-size: 1.2em;
@@ -244,16 +265,16 @@ a {
   background-color: #D6D6D6;
   text-shadow: 1px 1px 0 white;
 }
-/* line 117, ../../scss/style.scss */
+/* line 132, ../../scss/style.scss */
 #wrapper aside ul {
   margin: 10px 20px;
   line-height: 1.5em;
 }
-/* line 121, ../../scss/style.scss */
+/* line 136, ../../scss/style.scss */
 #wrapper aside ul ul {
   margin: 4px 0 10px 20px;
 }
-/* line 123, ../../scss/style.scss */
+/* line 138, ../../scss/style.scss */
 #wrapper aside ul ul li {
   list-style: square;
 }
