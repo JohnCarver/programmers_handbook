@@ -155,6 +155,6 @@ LOGGING = {
     }
 }
 
-if not os.environ['DJANGO_LOCAL']:
+if os.environ['DJANGO_ENV'] == 'heroku':
     import dj_database_url
     DATABASES['default'] =  dj_database_url.config()
