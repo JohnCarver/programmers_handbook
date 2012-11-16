@@ -10,13 +10,35 @@ from django.contrib.auth.models import User
 
 class Node(models.Model):
     title = models.CharField(max_length=100)
+    slug = models.SlugField()
     parent = models.ForeignKey('self', blank=True, null=True)
     updated_at = models.DateTimeField(default=timezone.now)
     created_at = models.DateTimeField(default=timezone.now)
     created_by = models.ForeignKey(User)
 
     def __unicode__(self):
-        return "%s (ID %i)" % (self.title, self.id)
+        return "%s (ID %i)" % (self.slug, self.id)
+
+    def get_content(self):
+        return Content.objects.filter(node=self, status=2).order_by('-version')[0] # TODO there always has to be a content
+
+    def get_children(self):
+        children = Node.objects.filter(parent=self)
+        if not children:
+            return None
+        return children
+
+    # /parent/child/node
+    # /parent/child
+
+    def _get_url_part(self, right_part):
+        new_part = "/%s%s" % (self.slug, right_part)
+        if self.parent:
+            return self.parent._get_url_part(new_part)
+        return new_part
+
+    def get_url(self):
+        return "/page" + self._get_url_part('/')
 
 
 class Content(models.Model):

@@ -10,7 +10,7 @@ class ContentInline(admin.TabularInline):
 
 
 class NodeAdmin(admin.ModelAdmin):
-    list_display = ('title', 'parent', 'updated_at', 'created_at', 'created_by')
+    list_display = ('title', 'slug', 'parent', 'updated_at', 'created_at', 'created_by')
     list_filter = ['created_by']
     search_fields = ['title']
     date_hierarchy = 'updated_at'
@@ -24,7 +24,7 @@ admin.site.register(Node, NodeAdmin)
 
 
 class ContentAdmin(admin.ModelAdmin):
-    list_display = ('node', 'version', 'created_at', 'created_by')
+    list_display = ('node', 'version', 'status', 'created_at', 'created_by')
     list_filter = ['created_by']
     search_fields = ['text']
     ordering = ('-created_at',)

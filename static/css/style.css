@@ -1,0 +1,172 @@
+/* line 17, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 13, ../../scss/_base.scss */
+textarea {
+  resize: none;
+}
+
+/* line 14, ../../scss/_base.scss */
+input[type=search] {
+  -webkit-appearance: none;
+}
+
+/* line 15, ../../scss/_base.scss */
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+/* line 16, ../../scss/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* line 17, ../../scss/_base.scss */
+input[type=text]:focus, input[type=search]:focus, input[type=password]:focus {
+  outline: 0 none;
+}
+
+/* line 18, ../../scss/_base.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 20, ../../scss/_base.scss */
+.TEMP {
+  color: red !important;
+}
+
+/* line 21, ../../scss/_base.scss */
+.hidden {
+  display: none;
+}
+
+/* line 6, ../../scss/style.scss */
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 11, ../../scss/style.scss */
+body {
+  background: white;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #2C3034;
+  background: #F0EFF1;
+}
+
+/* line 19, ../../scss/style.scss */
+a {
+  color: #0C6092;
+}
+
+/* line 21, ../../scss/style.scss */
+#wrapper {
+  width: 100%;
+}
+/* line 24, ../../scss/style.scss */
+#wrapper article {
+  margin-left: 230px;
+  padding: 20px 30px;
+  background: white;
+  line-height: 1.5em;
+}
+/* line 31, ../../scss/style.scss */
+#wrapper aside {
+  float: left;
+  width: 230px;
+}
+/* line 35, ../../scss/style.scss */
+#wrapper aside a {
+  color: #444;
+  text-decoration: none;
+}
+/* line 38, ../../scss/style.scss */
+#wrapper aside a:hover {
+  text-decoration: underline;
+}
+/* line 41, ../../scss/style.scss */
+#wrapper aside h2 {
+  color: #222;
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-top: 20px;
+  padding: 5px 10px;
+  background-color: #D6D6D6;
+  text-shadow: 1px 1px 0 white;
+}
+/* line 51, ../../scss/style.scss */
+#wrapper aside ul {
+  margin: 10px 20px;
+}
+/* line 54, ../../scss/style.scss */
+#wrapper aside ul ul {
+  margin: 4px 20px;
+}
+/* line 56, ../../scss/style.scss */
+#wrapper aside ul ul li {
+  list-style: square;
+}

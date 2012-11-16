@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block "sidebar" %}
+<h2>Contents</h2>
+
+<ul>
+    {% for node in root_nodes %}
+        {% include "handbook/_sidebar_node.html" with node=node only %}
+    {% endfor %}
+</ul>
+{% endblock %}
+
+{% block "content" %}
+    {{ selected_content.text }}
+{% endblock %}

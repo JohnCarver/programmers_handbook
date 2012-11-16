@@ -6,3 +6,5 @@ local_settings.py
 .DS_Store
 
 handbook.sqlite
+
+scss/.sass-cache

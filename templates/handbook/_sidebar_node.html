@@ -1,0 +1,12 @@
+<li>
+    <a href="{{ node.get_url }}">{{ node.title }}</a>
+    {% if node.get_children %}
+    <ul>
+        {% for child in node.get_children %}
+            {% with template_name="handbook/_sidebar_node.html" %} {# NOTE this may not be very performant, see http://python-dev.info/recursive-django-templates/ #}
+                {% include template_name with node=child only %}
+            {% endwith %}
+        {% endfor %}
+    </ul>
+    {% endif %}
+</li>

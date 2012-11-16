@@ -1,5 +1,13 @@
 # Django settings for programmers_handbook project.
 
+import os
+
+WORKSPACE_ROOT = os.path.abspath(os.path.dirname(__file__))
+WORKSPACE_ROOT = os.path.normpath(WORKSPACE_ROOT + '/..' + '/..') + '/'
+PROJECT_ROOT = WORKSPACE_ROOT + 'programmers_handbook/'
+STATIC_PATH = PROJECT_ROOT + 'static/'
+
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -64,9 +72,7 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    # Put strings here, like "/home/html/static" or "C:/www/django/static".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
+    STATIC_PATH,
 )
 
 # List of finder classes that know how to find static files in
@@ -103,9 +109,7 @@ ROOT_URLCONF = 'programmers_handbook.urls'
 WSGI_APPLICATION = 'programmers_handbook.wsgi.application'
 
 TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
+    PROJECT_ROOT + 'templates/',
 )
 
 INSTALLED_APPS = (

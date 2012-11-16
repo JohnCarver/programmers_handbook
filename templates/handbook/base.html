@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block "title" %}Programmer's Handbook{% endblock %}</title>
+    {# <meta name="description" content="TODO"> #}
+    {# <link rel="icon" href="/favicon.ico" type="image/x-icon"> #}
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="{{ STATIC_URL }}css/style.css">
+</head>
+<body>
+    <aside>
+        {% block "sidebar" %}{% endblock %}
+    </aside>
+    <article>
+        {% block "content" %}{% endblock %}
+    </article>
+</body>
+</html>
