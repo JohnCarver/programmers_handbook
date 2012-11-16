@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load markup %}
 
 {% block "sidebar" %}
 <h2>Contents</h2>
@@ -11,5 +12,5 @@
 {% endblock %}
 
 {% block "content" %}
-    {{ selected_content.text }}
+    {{ selected_content.text|markdown:"safe" }}
 {% endblock %}

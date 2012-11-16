@@ -28,9 +28,6 @@ class Node(models.Model):
             return None
         return children
 
-    # /parent/child/node
-    # /parent/child
-
     def _get_url_part(self, right_part):
         new_part = "/%s%s" % (self.slug, right_part)
         if self.parent:

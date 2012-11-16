@@ -116,18 +116,19 @@ body {
   font-size: 13px;
   color: #2C3034;
   background: #F0EFF1;
+  overflow: auto;
 }
 
-/* line 19, ../../scss/style.scss */
+/* line 20, ../../scss/style.scss */
 a {
   color: #0C6092;
 }
 
-/* line 21, ../../scss/style.scss */
+/* line 22, ../../scss/style.scss */
 #wrapper {
   width: 100%;
 }
-/* line 24, ../../scss/style.scss */
+/* line 25, ../../scss/style.scss */
 #wrapper article {
   margin-left: 230px;
   padding: 20px 30px;
@@ -135,20 +136,105 @@ a {
   line-height: 1.5em;
 }
 /* line 31, ../../scss/style.scss */
+#wrapper article h1, #wrapper article h2, #wrapper article h3, #wrapper article h4 {
+  display: block;
+  background-color: #BED4EB;
+  font-weight: normal;
+  color: #212224;
+  margin: 30px 0px 10px 0px;
+  padding: 5px 0 5px 10px;
+  text-shadow: 0px 1px 0 white;
+}
+/* line 41, ../../scss/style.scss */
+#wrapper article h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+  margin-top: 0;
+}
+/* line 42, ../../scss/style.scss */
+#wrapper article h2 {
+  font-size: 1.6em;
+}
+/* line 43, ../../scss/style.scss */
+#wrapper article h3 {
+  font-size: 1.3em;
+}
+/* line 44, ../../scss/style.scss */
+#wrapper article h4 {
+  font-size: 1em;
+}
+/* line 47, ../../scss/style.scss */
+#wrapper article em {
+  font-style: italic;
+}
+/* line 49, ../../scss/style.scss */
+#wrapper article p > code {
+  font-family: monospace;
+  background: #f9f9f9;
+  border: 1px solid #e9e9e9;
+  border-radius: 3px;
+  margin: 0 1px;
+  padding: 1px 3px;
+  white-space: nowrap;
+}
+/* line 59, ../../scss/style.scss */
+#wrapper article pre > code {
+  font-family: monospace;
+  margin: 5px 0;
+}
+/* line 64, ../../scss/style.scss */
+#wrapper article blockquote {
+  display: block;
+  border-left: 3px solid #eee;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+/* line 70, ../../scss/style.scss */
+#wrapper article blockquote blockquote {
+  margin: 5px 0;
+}
+/* line 73, ../../scss/style.scss */
+#wrapper article ul {
+  margin: 5px;
+}
+/* line 76, ../../scss/style.scss */
+#wrapper article ul li {
+  list-style: disc;
+  list-style-position: inside;
+}
+/* line 80, ../../scss/style.scss */
+#wrapper article ul li ul {
+  margin-left: 10px;
+  list-style: square;
+}
+/* line 87, ../../scss/style.scss */
+#wrapper article ol {
+  margin: 5px;
+}
+/* line 89, ../../scss/style.scss */
+#wrapper article ol li {
+  list-style: decimal;
+  list-style-position: inside;
+}
+/* line 92, ../../scss/style.scss */
+#wrapper article ol li ul {
+  margin-left: 10px;
+}
+/* line 97, ../../scss/style.scss */
 #wrapper aside {
   float: left;
   width: 230px;
 }
-/* line 35, ../../scss/style.scss */
+/* line 101, ../../scss/style.scss */
 #wrapper aside a {
   color: #444;
   text-decoration: none;
 }
-/* line 38, ../../scss/style.scss */
+/* line 104, ../../scss/style.scss */
 #wrapper aside a:hover {
   text-decoration: underline;
 }
-/* line 41, ../../scss/style.scss */
+/* line 107, ../../scss/style.scss */
 #wrapper aside h2 {
   color: #222;
   font-size: 1.2em;
@@ -158,15 +244,15 @@ a {
   background-color: #D6D6D6;
   text-shadow: 1px 1px 0 white;
 }
-/* line 51, ../../scss/style.scss */
+/* line 117, ../../scss/style.scss */
 #wrapper aside ul {
   margin: 10px 20px;
 }
-/* line 54, ../../scss/style.scss */
+/* line 120, ../../scss/style.scss */
 #wrapper aside ul ul {
   margin: 4px 20px;
 }
-/* line 56, ../../scss/style.scss */
+/* line 122, ../../scss/style.scss */
 #wrapper aside ul ul li {
   list-style: square;
 }
