@@ -3,6 +3,8 @@
 from django.shortcuts import render, redirect # , render_to_response, get_object_or_404
 from django.http import HttpResponse, Http404
 from django.core.exceptions import ObjectDoesNotExist
+from django.contrib.auth.decorators import login_required
+
 from handbook.models import Node
 from handbook.forms import ContentForm
 
@@ -17,6 +19,7 @@ def page(request):
 
     return render(request, 'handbook/page.html', { 'root_nodes': root_nodes, 'selected_content': selected_content })
 
+@login_required
 def page_edit(request):
     current_node = _get_selected_node(request.path)
     current_content = current_node.get_content()
@@ -34,7 +37,13 @@ def page_edit(request):
         form = ContentForm(initial={'text': current_content.text})
 
     root_nodes = _get_root_nodes()
-    return render(request, 'handbook/page_edit.html', { 'root_nodes': root_nodes, 'content_form': form, 'current_content': current_content})
+    return render(request, 'handbook/page_edit.html', {'root_nodes': root_nodes, 'content_form': form, 'current_content': current_content})
+
+@login_required
+def preview(request):
+    if request.is_ajax():
+        return render(request, 'handbook/_content_markdown.html', {'text': request.POST.get('text', '')})
+    return Http404
 
 def _get_root_node():
     try:

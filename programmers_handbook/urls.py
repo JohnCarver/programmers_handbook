@@ -14,5 +14,6 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^page/.*/$', 'handbook.views.page', name='page'),
     url(r'^page_edit/.*/$', 'handbook.views.page_edit', name='page_edit'),
+    url(r'^page_preview/', 'handbook.views.preview', name='page_preview'),
     url(r'^$', 'handbook.views.index', name='index'),
 )

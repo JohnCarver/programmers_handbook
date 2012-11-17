@@ -274,21 +274,35 @@ a {
 #wrapper article input[type="submit"] {
   font-size: 16px;
 }
-/* line 139, ../../../scss/style.scss */
+/* line 138, ../../../scss/style.scss */
+#wrapper article #preview {
+  border: 2px dotted #ddd;
+  margin-top: 20px;
+}
+/* line 142, ../../../scss/style.scss */
+#wrapper article #preview h1#previewHeader {
+  background: #ededed;
+  font-size: 18px;
+}
+/* line 147, ../../../scss/style.scss */
+#wrapper article #preview #previewText {
+  padding: 20px;
+}
+/* line 151, ../../../scss/style.scss */
 #wrapper aside {
   float: left;
   width: 230px;
 }
-/* line 143, ../../../scss/style.scss */
+/* line 155, ../../../scss/style.scss */
 #wrapper aside a {
   color: #444;
   text-decoration: none;
 }
-/* line 146, ../../../scss/style.scss */
+/* line 158, ../../../scss/style.scss */
 #wrapper aside a:hover {
   text-decoration: underline;
 }
-/* line 149, ../../../scss/style.scss */
+/* line 161, ../../../scss/style.scss */
 #wrapper aside h2 {
   color: #222;
   font-size: 1.2em;
@@ -298,16 +312,16 @@ a {
   background-color: #D6D6D6;
   text-shadow: 1px 1px 0 white;
 }
-/* line 159, ../../../scss/style.scss */
+/* line 171, ../../../scss/style.scss */
 #wrapper aside ul {
   margin: 10px 20px;
   line-height: 1.5em;
 }
-/* line 163, ../../../scss/style.scss */
+/* line 175, ../../../scss/style.scss */
 #wrapper aside ul ul {
   margin: 4px 0 10px 20px;
 }
-/* line 165, ../../../scss/style.scss */
+/* line 177, ../../../scss/style.scss */
 #wrapper aside ul ul li {
   list-style: square;
 }

@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% load markup %}
 
 {% block "sidebar" %}
     {% include "handbook/_sidebar.html" with root_nodes=root_nodes only %}
@@ -11,6 +10,6 @@
     {% else %}
     {# TODO provide login-link and -form #}
     {% endif %}
-    {{ selected_content.text|markdown:"safe,footnotes" }}
+    {% include "handbook/_content_markdown.html" with text=selected_content.text only %}
     <p id="content_meta">Version {{ selected_content.version }} ({{ selected_content.created_at|date:"Y/m/d H:i" }})
 {% endblock %}

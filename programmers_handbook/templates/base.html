@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ STATIC_URL }}/js/lib/highlight/styles/magula.css">
     <script src="{{ STATIC_URL }}/js/lib/highlight/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    {% block "javascript" %}{% endblock %}
 </head>
 <body>
     <div id="wrapper">
