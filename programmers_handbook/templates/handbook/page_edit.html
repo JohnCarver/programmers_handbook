@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block "content" %}
-    <form action="/page_edit/asdf/test/" method="post">{% csrf_token %}
+    <form action="{{ current_content.node.get_edit_url }}" method="post">{% csrf_token %}
         {{ content_form.text }}
         <br/>
         <input type="submit" value="Save as new version" /> {# TODO cancel-link #}
