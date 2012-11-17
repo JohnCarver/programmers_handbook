@@ -67,7 +67,7 @@ def _get_selected_node(request_path):
         else: # more than one page with this slug -> search via full path
             path = '/' + '/'.join(segments[1:])
             for node in selected_nodes:
-                if node.get_url() == path || node.get_edit_url() == path:
+                if node.get_url() == path or node.get_edit_url() == path:
                     selected_node = node
     except AttributeError:
         raise Http404
