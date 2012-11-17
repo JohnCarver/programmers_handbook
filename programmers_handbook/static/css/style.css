@@ -268,42 +268,57 @@ a {
   background-image: url(../images/content_edit.png);
 }
 /* line 131, ../../../scss/style.scss */
+#wrapper article label {
+  display: inline-block;
+  width: 50px;
+}
+/* line 136, ../../../scss/style.scss */
+#wrapper article input[type="text"], #wrapper article select {
+  width: 400px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+/* line 142, ../../../scss/style.scss */
+#wrapper article select {
+  font-size: 16px;
+}
+/* line 146, ../../../scss/style.scss */
 #wrapper article textarea {
   font-family: "Monaco", "Lucida Console", monospace;
 }
-/* line 135, ../../../scss/style.scss */
+/* line 150, ../../../scss/style.scss */
 #wrapper article input[type="submit"] {
   font-size: 16px;
 }
-/* line 139, ../../../scss/style.scss */
+/* line 154, ../../../scss/style.scss */
 #wrapper article #preview {
   border: 2px dotted #ddd;
   margin-top: 20px;
 }
-/* line 143, ../../../scss/style.scss */
+/* line 158, ../../../scss/style.scss */
 #wrapper article #preview h1#previewHeader {
   background: #ededed;
   font-size: 18px;
 }
-/* line 148, ../../../scss/style.scss */
+/* line 163, ../../../scss/style.scss */
 #wrapper article #preview #previewText {
   padding: 20px;
 }
-/* line 152, ../../../scss/style.scss */
+/* line 167, ../../../scss/style.scss */
 #wrapper aside {
   float: left;
   width: 230px;
 }
-/* line 156, ../../../scss/style.scss */
+/* line 171, ../../../scss/style.scss */
 #wrapper aside a {
   color: #444;
   text-decoration: none;
 }
-/* line 159, ../../../scss/style.scss */
+/* line 174, ../../../scss/style.scss */
 #wrapper aside a:hover {
   text-decoration: underline;
 }
-/* line 162, ../../../scss/style.scss */
+/* line 177, ../../../scss/style.scss */
 #wrapper aside h2 {
   color: #222;
   font-size: 1.2em;
@@ -313,16 +328,16 @@ a {
   background-color: #D6D6D6;
   text-shadow: 1px 1px 0 white;
 }
-/* line 172, ../../../scss/style.scss */
+/* line 187, ../../../scss/style.scss */
 #wrapper aside ul {
   margin: 10px 20px;
   line-height: 1.5em;
 }
-/* line 176, ../../../scss/style.scss */
+/* line 191, ../../../scss/style.scss */
 #wrapper aside ul ul {
   margin: 4px 0 10px 20px;
 }
-/* line 178, ../../../scss/style.scss */
+/* line 193, ../../../scss/style.scss */
 #wrapper aside ul ul li {
   list-style: square;
 }

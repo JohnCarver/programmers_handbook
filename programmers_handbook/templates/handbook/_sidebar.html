@@ -8,5 +8,6 @@
 {% if user.is_superuser %}
 <ul style="margin-top: 40px; font-size: 11px;">
     <li><a href="/admin" style="color: #aaa;">Admin</a></li>
+<li><a href="{% url node_create %}" style="color: #aaa;">Create Node</a></li>
 </ul>
 {% endif %}

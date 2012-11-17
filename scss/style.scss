@@ -128,6 +128,21 @@ a { color: #0C6092; }
             &:hover { background-image: url(../images/content_edit.png); }
         }
 
+        label {
+            display: inline-block;
+            width: 50px;
+        }
+
+        input[type="text"], select {
+            width: 400px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        select {
+            font-size: 16px;
+        }
+
         textarea {
             font-family: "Monaco", "Lucida Console", monospace;
         }

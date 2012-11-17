@@ -1,5 +1,4 @@
 # coding: utf-8
-
 import os
 import sys
 from django.utils import timezone
@@ -20,13 +19,10 @@ class Node(models.Model):
         return "%s (ID %i)" % (self.slug, self.id)
 
     def get_content(self):
-        return Content.objects.filter(node=self, status=2).order_by('-version')[0] # TODO there always has to be a content
+        return Content.objects.filter(node=self, status=2).order_by('-version')[0]  # TODO there always has to be a content
 
     def get_children(self):
-        children = Node.objects.filter(parent=self)
-        if not children:
-            return None
-        return children
+        return Node.objects.filter(parent=self)
 
     def _get_url_part(self, right_part):
         new_part = "/%s%s" % (self.slug, right_part)
