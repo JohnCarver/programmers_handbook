@@ -120,8 +120,9 @@ a { color: #0C6092; }
             float: right;
             height: 48px;
             width: 48px;
-            margin-right: -10px;
-            background: url(../images/content_edit_light.png) no-repeat center center;
+            margin-right: -20px;
+            margin-top: -4px;
+            background: white url(../images/content_edit_light.png) no-repeat center center;
             span { display: none; }
             &:hover { background-image: url(../images/content_edit.png); }
         }
