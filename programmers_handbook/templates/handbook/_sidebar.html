@@ -1,7 +1,12 @@
 <h2>Contents</h2>
-
 <ul>
     {% for node in root_nodes %}
         {% include "handbook/_sidebar_node.html" with node=node only %}
     {% endfor %}
 </ul>
+
+{% if user.is_superuser %}
+<ul style="margin-top: 40px; font-size: 11px;">
+    <li><a href="/admin" style="color: #aaa;">Admin</a></li>
+</ul>
+{% endif %}
