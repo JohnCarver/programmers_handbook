@@ -42,7 +42,7 @@ def page_edit(request):
 @login_required
 def preview(request):
     if request.is_ajax():
-        return render(request, 'handbook/_content_markdown.html', {'text': request.POST.get('text', '')})
+        return render(request, 'handbook/content_markdown_preview.html', {'text': request.POST.get('text', '')})
     return Http404
 
 def _get_root_node():
