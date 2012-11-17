@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,96 +20,96 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 13, ../../scss/_base.scss */
+/* line 13, ../../../scss/_base.scss */
 textarea {
   resize: none;
 }
 
-/* line 14, ../../scss/_base.scss */
+/* line 14, ../../../scss/_base.scss */
 input[type=search] {
   -webkit-appearance: none;
 }
 
-/* line 15, ../../scss/_base.scss */
+/* line 15, ../../../scss/_base.scss */
 input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-/* line 16, ../../scss/_base.scss */
+/* line 16, ../../../scss/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-/* line 17, ../../scss/_base.scss */
+/* line 17, ../../../scss/_base.scss */
 input[type=text]:focus, input[type=search]:focus, input[type=password]:focus {
   outline: 0 none;
 }
 
-/* line 18, ../../scss/_base.scss */
+/* line 18, ../../../scss/_base.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 20, ../../scss/_base.scss */
+/* line 20, ../../../scss/_base.scss */
 .TEMP {
   color: red !important;
 }
 
-/* line 21, ../../scss/_base.scss */
+/* line 21, ../../../scss/_base.scss */
 .hidden {
   display: none;
 }
 
-/* line 6, ../../scss/style.scss */
+/* line 6, ../../../scss/style.scss */
 html, body {
   height: 100%;
   overflow: hidden;
 }
 
-/* line 11, ../../scss/style.scss */
+/* line 11, ../../../scss/style.scss */
 body {
   background: white;
   font-family: Arial, sans-serif;
@@ -119,23 +119,23 @@ body {
   overflow: auto;
 }
 
-/* line 20, ../../scss/style.scss */
+/* line 20, ../../../scss/style.scss */
 a {
   color: #0C6092;
 }
 
-/* line 22, ../../scss/style.scss */
+/* line 22, ../../../scss/style.scss */
 #wrapper {
   width: 100%;
 }
-/* line 25, ../../scss/style.scss */
+/* line 25, ../../../scss/style.scss */
 #wrapper article {
   margin-left: 230px;
   padding: 20px 30px;
   background: white;
   line-height: 1.5em;
 }
-/* line 31, ../../scss/style.scss */
+/* line 31, ../../../scss/style.scss */
 #wrapper article h1, #wrapper article h2, #wrapper article h3, #wrapper article h4 {
   display: block;
   background-color: #BED4EB;
@@ -145,33 +145,33 @@ a {
   padding: 5px 0 5px 10px;
   text-shadow: 0px 1px 0 white;
 }
-/* line 41, ../../scss/style.scss */
+/* line 41, ../../../scss/style.scss */
 #wrapper article h1 {
   font-size: 2em;
   line-height: 1.2em;
   margin-top: 0;
 }
-/* line 42, ../../scss/style.scss */
+/* line 42, ../../../scss/style.scss */
 #wrapper article h2 {
   font-size: 1.6em;
 }
-/* line 43, ../../scss/style.scss */
+/* line 43, ../../../scss/style.scss */
 #wrapper article h3 {
   font-size: 1.3em;
 }
-/* line 44, ../../scss/style.scss */
+/* line 44, ../../../scss/style.scss */
 #wrapper article h4 {
   font-size: 1em;
 }
-/* line 47, ../../scss/style.scss */
+/* line 47, ../../../scss/style.scss */
 #wrapper article em {
   font-style: italic;
 }
-/* line 49, ../../scss/style.scss */
+/* line 49, ../../../scss/style.scss */
 #wrapper article p {
   padding: 5px 0;
 }
-/* line 51, ../../scss/style.scss */
+/* line 51, ../../../scss/style.scss */
 #wrapper article p > code {
   font-family: monospace;
   background: #f9f9f9;
@@ -181,81 +181,113 @@ a {
   padding: 1px 3px;
   white-space: nowrap;
 }
-/* line 61, ../../scss/style.scss */
+/* line 61, ../../../scss/style.scss */
 #wrapper article pre > code {
   font-family: monospace;
   margin: 5px 0;
 }
-/* line 66, ../../scss/style.scss */
+/* line 66, ../../../scss/style.scss */
 #wrapper article blockquote {
   display: block;
   border-left: 3px solid #eee;
   margin-left: 10px;
   padding-left: 10px;
 }
-/* line 72, ../../scss/style.scss */
+/* line 72, ../../../scss/style.scss */
 #wrapper article blockquote blockquote {
   margin: 5px 0;
 }
-/* line 75, ../../scss/style.scss */
+/* line 75, ../../../scss/style.scss */
 #wrapper article ul {
   margin: 5px;
 }
-/* line 78, ../../scss/style.scss */
+/* line 78, ../../../scss/style.scss */
 #wrapper article ul li {
   list-style: disc;
   list-style-position: outside;
   margin-left: 30px;
 }
-/* line 83, ../../scss/style.scss */
+/* line 83, ../../../scss/style.scss */
 #wrapper article ul li ul {
   margin-left: 10px;
   list-style: square;
 }
-/* line 86, ../../scss/style.scss */
+/* line 86, ../../../scss/style.scss */
 #wrapper article ul li ul li {
   margin-left: 8px;
 }
-/* line 91, ../../scss/style.scss */
+/* line 91, ../../../scss/style.scss */
 #wrapper article ol {
   margin: 5px;
 }
-/* line 93, ../../scss/style.scss */
+/* line 93, ../../../scss/style.scss */
 #wrapper article ol li {
   list-style: decimal;
   list-style-position: outside;
   margin-left: 30px;
 }
-/* line 97, ../../scss/style.scss */
+/* line 97, ../../../scss/style.scss */
 #wrapper article ol li ul, #wrapper article ol li ol {
   margin-left: 10px;
 }
-/* line 99, ../../scss/style.scss */
+/* line 99, ../../../scss/style.scss */
 #wrapper article ol li ul li, #wrapper article ol li ol li {
   margin-left: 8px;
 }
-/* line 104, ../../scss/style.scss */
+/* line 104, ../../../scss/style.scss */
 #wrapper article hr {
   display: block;
   margin: 20px 0;
   border: none;
   border-top: 1px solid #ccc;
 }
-/* line 112, ../../scss/style.scss */
+/* line 111, ../../../scss/style.scss */
+#wrapper article p#content_meta {
+  margin-top: 10px;
+  font-size: 11px;
+  padding-bottom: 0;
+  color: #AFADB0;
+}
+/* line 118, ../../../scss/style.scss */
+#wrapper article a#edit {
+  display: block;
+  float: right;
+  height: 48px;
+  width: 48px;
+  margin-right: -10px;
+  background: url(../images/content_edit_light.png) no-repeat center center;
+}
+/* line 125, ../../../scss/style.scss */
+#wrapper article a#edit span {
+  display: none;
+}
+/* line 126, ../../../scss/style.scss */
+#wrapper article a#edit:hover {
+  background-image: url(../images/content_edit.png);
+}
+/* line 129, ../../../scss/style.scss */
+#wrapper article textarea {
+  font-family: "Monaco", "Lucida Console", monospace;
+}
+/* line 133, ../../../scss/style.scss */
+#wrapper article input[type="submit"] {
+  font-size: 16px;
+}
+/* line 138, ../../../scss/style.scss */
 #wrapper aside {
   float: left;
   width: 230px;
 }
-/* line 116, ../../scss/style.scss */
+/* line 142, ../../../scss/style.scss */
 #wrapper aside a {
   color: #444;
   text-decoration: none;
 }
-/* line 119, ../../scss/style.scss */
+/* line 145, ../../../scss/style.scss */
 #wrapper aside a:hover {
   text-decoration: underline;
 }
-/* line 122, ../../scss/style.scss */
+/* line 148, ../../../scss/style.scss */
 #wrapper aside h2 {
   color: #222;
   font-size: 1.2em;
@@ -265,16 +297,16 @@ a {
   background-color: #D6D6D6;
   text-shadow: 1px 1px 0 white;
 }
-/* line 132, ../../scss/style.scss */
+/* line 158, ../../../scss/style.scss */
 #wrapper aside ul {
   margin: 10px 20px;
   line-height: 1.5em;
 }
-/* line 136, ../../scss/style.scss */
+/* line 162, ../../../scss/style.scss */
 #wrapper aside ul ul {
   margin: 4px 0 10px 20px;
 }
-/* line 138, ../../scss/style.scss */
+/* line 164, ../../../scss/style.scss */
 #wrapper aside ul ul li {
   list-style: square;
 }

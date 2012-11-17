@@ -107,6 +107,32 @@ a { color: #0C6092; }
             border: none;
             border-top: 1px solid #ccc;
         }
+
+        p#content_meta {
+            margin-top: 10px;
+            font-size: 11px;
+            padding-bottom: 0;
+            color: #AFADB0;
+        }
+
+        a#edit {
+            display: block;
+            float: right;
+            height: 48px;
+            width: 48px;
+            margin-right: -10px;
+            background: url(../images/content_edit_light.png) no-repeat center center;
+            span { display: none; }
+            &:hover { background-image: url(../images/content_edit.png); }
+        }
+
+        textarea {
+            font-family: "Monaco", "Lucida Console", monospace;
+        }
+
+        input[type="submit"] {
+            font-size: 16px;
+        }
     }
 
     aside {

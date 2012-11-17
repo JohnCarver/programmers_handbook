@@ -37,6 +37,9 @@ class Node(models.Model):
     def get_url(self):
         return "/page" + self._get_url_part('/')
 
+    def get_edit_url(self):
+        return "/page_edit" + self._get_url_part('/')
+
 
 class Content(models.Model):
     STATUS_CHOICES = (

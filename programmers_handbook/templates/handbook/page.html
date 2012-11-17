@@ -2,15 +2,15 @@
 {% load markup %}
 
 {% block "sidebar" %}
-<h2>Contents</h2>
-
-<ul>
-    {% for node in root_nodes %}
-        {% include "handbook/_sidebar_node.html" with node=node only %}
-    {% endfor %}
-</ul>
+    {% include "handbook/_sidebar.html" with root_nodes=root_nodes only %}
 {% endblock %}
 
 {% block "content" %}
+    {% if user.is_authenticated %}
+        <a id="edit" href="{{ selected_content.node.get_edit_url }}" title="Edit this page"><span>edit</span></a>
+    {% else %}
+    {# TODO provide login-link and -form #}
+    {% endif %}
     {{ selected_content.text|markdown:"safe,footnotes" }}
+    <p id="content_meta">Version {{ selected_content.version }} ({{ selected_content.created_at|date:"Y/m/d H:i" }})
 {% endblock %}
