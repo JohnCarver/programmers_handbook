@@ -15,7 +15,7 @@
     <form action="" method="post">{% csrf_token %}
         <label for="id_title">Titel</label>{{ node_form.title }}<br/>
         <label for="id_slug">Slug</label>{{ node_form.slug }}<br/>
-        <label for="id_parent">Parent</label><select name="parent" id="id_parent">{{ root_nodes|hierachical_select_options }}</select><br/>
+        <label for="id_parent">Parent</label><select name="parent" id="id_parent"><option value="">&nbsp;</option>{{ root_nodes|hierachical_select_options }}</select><br/>
         <textarea name="text" id="id_text" cols="120" rows="15">
 # Heading 1
 

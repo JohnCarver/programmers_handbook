@@ -49,7 +49,8 @@ def node_create(request):
         form = NodeForm(request.POST)
         if form.is_valid():
             node = form.save(commit=False)
-            node.parent = Node.objects.get(id=int(request.POST['parent']))
+            if request.POST['parent'] != '':
+                node.parent = Node.objects.get(id=int(request.POST['parent']))
             node.created_by = request.user
             node.save()
             content = Content(version=1, status=2)
